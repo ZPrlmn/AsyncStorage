@@ -5,10 +5,10 @@ import { Button, FlatList, StyleSheet, Text, TextInput, View } from 'react-nativ
 export default function App() {
   const [firstName, setFirstName] = useState('');
   const [data, setData] = useState([]);
-  const [editItemId, setEditItemId] = useState(null); // State to track the currently edited item ID
-  const [editedValue, setEditedValue] = useState(''); // State to track the edited value
+  const [editItemId, setEditItemId] = useState(null); 
+  const [editedValue, setEditedValue] = useState(''); 
 
-  // Load data from AsyncStorage when component mounts
+  
   useEffect(() => {
     const loadData = async () => {
       try {
@@ -51,7 +51,7 @@ export default function App() {
       );
       setData(updatedData);
       await AsyncStorage.setItem('data', JSON.stringify(updatedData));
-      setEditItemId(null); // Exit edit mode
+      setEditItemId(null); 
     } catch (error) {
       console.error('Error editing item: ', error);
     }
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   longText: {
-    width: '100%', // Ensure long text wraps onto the next line
+    width: '100%', 
   },
   inputContainer: {
     flexDirection: 'column',
