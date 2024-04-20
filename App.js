@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     marginTop: 20
   },
   item: {
-    width: '90%',
+    width: 320,
     backgroundColor: '#f9c2ff',
     padding: 20,
     marginVertical: 8,
@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center'
   },
   textContainer: {
-    flex: 1, // Occupy remaining space
+    flex: 1,
   },
   title: {
     fontSize: 16,

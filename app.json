@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "JSONCRUD",
-    "slug": "JSONCRUD",
+    "name": "AsyncStorage",
+    "slug": "AsyncStorage",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
